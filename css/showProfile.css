@@ -1,0 +1,100 @@
+/* PORFILE */
+#profile_information .avatar{
+	margin-top: 35px;
+	margin-bottom: 30px;
+}
+
+#profile_information .info{
+	padding-top: 10px;
+}
+
+.info h2{
+	padding-bottom: 30px;
+	color: #455a64;
+	font-weight: 1000;
+	text-transform: uppercase;
+}
+
+#profile_information .contactCont{
+	padding: 4px 0;
+}
+
+#profile_information .contactCont .social{
+	padding-left: 0;
+	max-width: 40px;
+}
+
+#profile_information .info .social_text{
+	padding-left: 5px;
+	color: #333333;
+}
+
+.contactCont .social_text a{
+	color: #333333;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#profile_information .achievements{
+	margin: 60px 0 60px 0;
+	background: #455a64;
+	padding-bottom: 0px;
+	border-bottom: 0px;
+}
+
+.achievements .container{
+	padding-bottom: 40px;
+}
+
+.carousel div h2{
+	color: #ECEFF1;
+	text-align: center;
+}
+
+.carousel div p{
+	color: #2F95D8;
+	text-align: center;
+}
+
+.slick-dots li button:before{
+	color: #ECEFF1 !important;
+}
+
+#profile_information .image_banner{
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+#profile_information .voting2{
+	margin-left: 15px;
+}
+
+#profile_information .rating{
+	padding-top: 85px;
+}
+
+#profile_information .month{
+	padding-bottom: 10px;
+}
+
+#profile_information .bio{
+	padding-left: 20px;
+	padding-top: 20px;
+	text-align: justify;
+}
+
+.bio>h3{
+	color: #455a64;
+}
+
+.rating>div>h4{
+	color: #2F95D8;
+}
+
+.rating>div>p{
+	font-size: 1.2em;
+}
+
+.rating>div>p>i{
+	font-size: 2em;
+}

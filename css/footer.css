@@ -1,0 +1,90 @@
+#myFooter{
+	background:#c2c2c2; 
+	height: 300px;
+	margin-top: 70px;
+	height: 100%;
+}
+
+#myFooter .container{
+	padding-bottom: 30px;
+}
+
+#myFooter #form .form-group>div{
+	padding-left: 0;
+}
+
+#myFooter h3{
+	margin-bottom: 20px;
+}
+
+#myFooter #form input,
+#myFooter #form textarea{
+	border: none;
+	outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 0.2em solid #78909c;
+    background: transparent;
+}
+
+#myFooter #form textarea{
+	overflow: none;
+}
+
+#myFooter #form input:focus,
+#myFooter #form textarea:focus{
+	color: #333;
+	outline: none;
+    box-shadow: none;
+	border-color: #455a64;
+}
+
+#myFooter #form .form-group>div{
+	padding-bottom: 6px;
+}
+
+#myFooter #form #submitBtn{
+	background: #78909c;
+	color: #333;
+	border-color: #78909c;
+	text-shadow: none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#myFooter #form #submitBtn:focus{
+	outline: none;
+    box-shadow: none;
+	background-color: #455a64;
+	border-color: #455a64;
+	color: #c2c2c2;
+}
+
+#myFooter #form #submitBtn:hover{
+	background-color: #455a64;
+	border-color: #455a64;
+	color: #c2c2c2;
+}
+
+#myFooter #form input::-webkit-input-placeholder,
+#myFooter #form input:-moz-placeholder,
+#myFooter #form input::-moz-placeholder,
+#myFooter #form input:-ms-input-placeholder,
+#myFooter #form textarea::-webkit-input-placeholder,
+#myFooter #form textarea:-moz-placeholder,
+#myFooter #form textarea::-moz-placeholder,
+#myFooter #form textarea:-ms-input-placeholder{
+	color: #333;
+}
+#myFooter #form input:focus::-webkit-input-placeholder,
+#myFooter #form input:focus:-moz-placeholder,
+#myFooter #form input:focus::-moz-placeholder,
+#myFooter #form input:focus:-ms-input-placeholder,
+#myFooter #form textarea:focus::-webkit-input-placeholder,
+#myFooter #form textarea:focus:-moz-placeholder,
+#myFooter #form textarea:focus::-moz-placeholder,
+#myFooter #form textarea:focus:-ms-input-placeholder{  
+   color: #333;  
+}

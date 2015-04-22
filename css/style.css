@@ -1,0 +1,194 @@
+.row{
+	margin: 0;
+	max-width: 100%;
+}
+
+/* HOMEPAGE */
+
+
+#portoPhoto,
+#portoPhoto img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+
+#portoPhoto{
+	top: -180px;
+}
+
+
+/* ACCORDIONS */
+.userPhoto{
+	height: 60px !important;
+	width: 60px !important;
+	padding: 0;
+}
+
+ul li{
+	list-style-type: none;
+	padding: 5px 15px;
+}
+
+.accordion-inner,
+.accordion-inner ul{
+	padding: 0;
+}
+
+.accordion-heading{
+	background: #455a64;
+	color: #cfd8dc;
+	font-size: 17px;
+	padding-top: 6px;
+}
+
+.acoordion-heading>a{
+	background: #78909c;
+}
+
+.accordion-heading a i{
+	color: #cfd8dc !important;
+	height: 20px;
+	width: 20px;
+	font-size: 20px;
+}
+
+#topQuestions .accordion-heading{
+	margin-top: 70px;
+}
+
+.accordion-inner ul li p{
+	padding-top: 10px;
+	color: #333;
+}
+
+#topUsers ul li div{
+	text-align: center;
+}
+
+#topUsers ul li div p{
+	padding: 0;
+}
+
+#topUsers .totalPoints{
+	color: #455a64;
+}
+
+#topUsers .totalPoints h2{
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+
+/* MODALS */
+
+#signInModal .modal-content{
+	border-radius: 0;
+	border: none;
+	background: #ECEFF1;
+}
+
+#signInModal .modal-body,
+#signInModal .nav li{
+	padding: 0;
+}
+
+#signInModal .nav{
+	background: #455A64;
+}
+
+.nav-tabs>li>a,
+.nav-tabs>li>a:hover,
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover{
+	background: transparent;
+	color: #ECEFF1;
+	border-radius: 0;
+	border: none;
+	padding: 10px 15px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.nav-tabs>li>a:hover,
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover{
+	-moz-box-shadow: inset #eceff1 0 -6px 0 0;
+	-webkit-box-shadow: inset #eceff1 0 -6px 0 0;
+	-o-box-shadow: inset #eceff1 0 -6px 0 0;
+	box-shadow: inset #eceff1 0 -6px 0 0;
+}
+
+.tab-content>.tab-pane>h4{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	color: #455A64;
+}
+
+.tab-pane>.form-group,
+.tab-pane>.form-group>label,
+.tab-pane>.form-group>div,
+.tab-pane>.form-group>div>input{
+	padding: 0;
+}
+
+.tab-pane>.form-group{
+	border-bottom: 0.2em solid #455A64;
+}
+
+.tab-pane>.form-group>label{
+	margin: 0;
+  	padding-top: 8px;
+  	color: #455A64;
+}
+
+.tab-pane input{
+	border: none;
+	border-radius: 0;	
+	background-color: transparent;
+	box-shadow: none;
+   	color: #333;
+}
+
+.tab-pane input:focus{
+	box-shadow: none;
+}
+
+#signInModal .modal-footer{
+	text-align: center;
+	border: none;
+}
+
+#signInModal button{
+	background: #78909c;
+	color: #333;
+	border-color: #78909c;
+	text-shadow: none;
+	margin-top: 15px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#signInModal button:focus{
+	outline: none;
+    box-shadow: none;
+	background-color: #455a64;
+	border-color: #455a64;
+	color: #c2c2c2;
+}
+
+#signInModal button:hover{
+	background-color: #455a64;
+	border-color: #455a64;
+	color: #c2c2c2;
+}
+
+#signInModal .btnCont{
+	text-align: center;
+}

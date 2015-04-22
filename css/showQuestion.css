@@ -1,0 +1,109 @@
+/* SHOW QUESTION AND ANSWERS PAGE */
+#questAnsCont,
+#questHolder,
+#questAnsCont>div,
+.ansHolder{
+	padding: 0;
+}
+
+#questHolder{
+	margin-top: 70px;
+}
+
+.header{
+	padding: 10px 0;
+}
+
+#questHolder .header{
+	background: #CFD8DC;
+}
+
+.header .photoAndName img,
+.header .photoAndName .username{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.header .photoAndName .username{
+	text-align: center;
+}
+
+.header ul li{
+	display: inline-block;
+	padding-right: 0;
+	padding-top: 0;
+}
+
+.header .creationDate,
+#questHolder .tags{
+	text-align: right;
+}
+
+#questHolder .tags{
+	margin-top: 20px;
+	padding-top: 0;
+}
+
+#questHolder .tags li{
+	padding: 3px;
+	font-size: 0.8em;
+	background: #2f95d8;
+	color: #333;
+	border-radius: 3px;
+}
+
+.header .creationDate,
+#questHolder .question{
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0;
+}
+
+#questHolder .question{
+	color: #455A64;
+	padding-top: 15px;
+}
+
+.header .creationDate{
+	font-size: 0.9em;
+	padding-right: 15px;
+	margin-top: 10px;
+}
+
+#questHolder .question{
+	padding-left: 15px;
+}
+
+.header .icons{
+	text-align: right;
+	font-size: 1.15em;
+}
+
+.header .icons a{
+	color: #2f95d8;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.header .icons a:hover{
+	color: #333;
+}
+
+.ansHolder .answer,
+.comHolder .comment{
+	text-align: justify;
+	padding-top: 10px;
+}
+
+.comHolder .photoAndName{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#sideBarHighlights #topUsers .accordion-heading{
+	margin-top: 50px;
+}
