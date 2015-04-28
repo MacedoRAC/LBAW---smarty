@@ -16,7 +16,7 @@
 				<h2>Pedro Lemos Faria</h2>
 				<div class="col-lg-12 contactCont">
 					<img class="social col-lg-2" src="{$BASE_URL}images/university.png" alt="course_logo">
-					<p class="social_text col-lg-10">Mestrado Integrado em Engenharia Informática e Computação</p>
+					<p class="social_text col-lg-10">Mestrado Integrado em Engenharia Inform?tica e Computa??o</p>
 				</div>
 				<div class="col-lg-12 contactCont">
 					<img class="social col-lg-2" src="{$BASE_URL}images/email.png" alt="email_logo">

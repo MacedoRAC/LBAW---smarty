@@ -11,7 +11,7 @@
 			<div class="header col-lg-12">
 				<div class="photoAndName col-lg-2">
 					<img src="{$BASE_URL}images/avatar.png" class="col-lg-12">
-					<h5 class="username col-lg-12">João Silva</h5>
+					<h5 class="username col-lg-12">Jo?o Silva</h5>
 				</div>
 				<div class="col-lg-10">
 					<p class="creationDate col-lg-12 text-muted">12-01-2015 at 12:10h</p>
@@ -60,7 +60,7 @@
 			<div class="header col-lg-12">
 				<div class="photoAndName col-lg-2">
 					<img src="{$BASE_URL}images/avatar.png" class="col-lg-12">
-					<h5 class="username col-lg-12">João Silva</h5>
+					<h5 class="username col-lg-12">Jo?o Silva</h5>
 				</div>
 				<div class="col-lg-10">
 					<p class="creationDate col-lg-12 text-muted">12-01-2015 at 12:10h</p>

@@ -40,7 +40,7 @@ function smarty_function_fetch($params, $template)
 
     if (isset($template->smarty->security_policy)) {
         if ($protocol) {
-            // remote resource (or php stream, …)
+            // remote resource (or php stream, ?)
             if (!$template->smarty->security_policy->isTrustedUri($params['file'])) {
                 return;
             }

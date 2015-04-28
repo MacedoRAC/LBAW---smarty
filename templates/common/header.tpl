@@ -23,11 +23,11 @@
   </head>
   <body>
     <div class="row">
-        <!--{if $LOGGED}
+        {if $USERNAME}
             {include file='common/navbar_logged.tpl'}
-        {else}-->
+        {else}
             {include file='common/navbar_unlogged.tpl'}
-        <!--{/if}-->
+        {/if}
 
         {block name="content"}
 

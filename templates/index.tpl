@@ -16,26 +16,12 @@
 			    <div id="collapseOne" class="accordion-body collapse in">
 			      <div class="accordion-inner col-lg-12">
 			        <ul class="col-lg-12">
+                        {foreach $LAST_QUESTIONS as $question}
 			        	<li class="col-lg-12">
-			        		<img src="{$BASE_URL}images/avatar.png" alt="" class="userPhoto col-lg-3">
-			        		<a href="{$BASE_URL}pages/showQuestion.php"><p class="col-lg-9">Put the question here?</p></a>
+			        		<img src="{$BASE_URL}images/assets/{$question.avatarurl}" alt="" class="userPhoto col-lg-3">
+			        		<a href="{$BASE_URL}pages/showQuestion.php"><p class="col-lg-9">{$question.texto}?</p></a>
 			        	</li>
-			        	<li class="col-lg-12">
-			        		<img src="{$BASE_URL}images/avatar.png" alt="" class="userPhoto col-lg-3">
-			        		<a href="{$BASE_URL}pages/showQuestion.php"><p class="col-lg-9">Put the question here?</p></a>
-			        	</li>
-			        	<li class="col-lg-12">
-			        		<img src="{$BASE_URL}images/avatar.png" alt="" class="userPhoto col-lg-3">
-			        		<a href="{$BASE_URL}pages/showQuestion.php"><p class="col-lg-9">Put the question here?</p></a>
-			        	</li>
-			        	<li class="col-lg-12">
-			        		<img src="{$BASE_URL}images/avatar.png" alt="" class="userPhoto col-lg-3">
-			        		<a href="{$BASE_URL}pages/showQuestion.php"><p class="col-lg-9">Put the question here?</p></a>
-			        	</li>
-			        	<li class="col-lg-12">
-			        		<img src="{$BASE_URL}images/avatar.png" alt="" class="userPhoto col-lg-3">
-			        		<a href="{$BASE_URL}pages/showQuestion.php"><p class="col-lg-9">Put the question here?</p></a>
-			        	</li>
+                        {/foreach}
 			        </ul>
 			      </div>
 			    </div>
@@ -53,26 +39,12 @@
 			    <div id="collapseTwo" class="accordion-body collapse in">
 			      <div class="accordion-inner col-lg-12">
 			        <ul class="col-lg-12">
+                        {foreach $MOST_VOTED_QUESTIONS as $question}
 			        	<li class="col-lg-12">
-			        		<img src="{$BASE_URL}images/avatar.png" alt="" class="userPhoto col-lg-3">
-			        		<p class="col-lg-9">Put the question here?</p>
+                            <img src="{$BASE_URL}images/assets/{$question.avatarurl}" alt="" class="userPhoto col-lg-3">
+                            <a href="{$BASE_URL}pages/showQuestion.php"><p class="col-lg-9">{$question.texto}?</p></a>
 			        	</li>
-			        	<li class="col-lg-12">
-			        		<img src="{$BASE_URL}images/avatar.png" alt="" class="userPhoto col-lg-3">
-			        		<p class="col-lg-9">Put the question here?</p>
-			        	</li>
-			        	<li class="col-lg-12">
-			        		<img src="{$BASE_URL}images/avatar.png" alt="" class="userPhoto col-lg-3">
-			        		<p class="col-lg-9">Put the question here?</p>
-			        	</li>
-			        	<li class="col-lg-12">
-			        		<img src="{$BASE_URL}images/avatar.png" alt="" class="userPhoto col-lg-3">
-			        		<p class="col-lg-9">Put the question here?</p>
-			        	</li>
-			        	<li class="col-lg-12">
-			        		<img src="{$BASE_URL}images/avatar.png" alt="" class="userPhoto col-lg-3">
-			        		<p class="col-lg-9">Put the question here?</p>
-			        	</li>
+                        {/foreach}
 			        </ul>
 			      </div>
 			    </div>
@@ -86,71 +58,25 @@
 		      <a class="accordion-toggle col-lg-1" data-toggle="collapse" data-parent="#topUsers" href="#collapseThree">
 		        <i class="glyphicon glyphicon-chevron-down"></i>
 		      </a>
-		      <p class="col-lg-10">Top users of February</p>
+		      <p class="col-lg-10">Top users</p>
 		    </div>
 		    <div id="collapseThree" class="accordion-body collapse in">
 		      <div class="accordion-inner col-lg-12">
 		        <ul class="col-lg-12">
+                    {foreach $MOST_VOTED_USERS as $user}
 		        	<li class="col-lg-12">
-		        		<img src="{$BASE_URL}images/avatar.png" alt="" class="userPhoto col-lg-3">
+		        		<img src="{$BASE_URL}images/assets/{$user.avatarurl}" alt="" class="userPhoto col-lg-3">
 		        		<div class="col-lg-4 totalPoints">
-		        			<h2>35</h2>
+		        			<h2>{$user.pontuacao}</h2>
 		        			<p>points</p>
 		        		</div>
 
 		        		<div class="col-lg-5 thumbsUpDown">
-		        			<p><i class="glyphicon glyphicon-thumbs-up"></i>45</p>
-		        			<p><i class="glyphicon glyphicon-thumbs-down"></i>10</p>
+		        			<p><i class="glyphicon glyphicon-thumbs-up"></i>{$user.tu_result}</p>
+		        			<p><i class="glyphicon glyphicon-thumbs-down"></i>{$user.td_result}</p>
 		        		</div>
 		        	</li>
-		        	<li class="col-lg-12">
-		        		<img src="{$BASE_URL}images/avatar.png" alt="" class="userPhoto col-lg-3">
-		        		<div class="col-lg-4 totalPoints">
-		        			<h2>35</h2>
-		        			<p>points</p>
-		        		</div>
-
-		        		<div class="col-lg-5 thumbsUpDown">
-		        			<p><i class="glyphicon glyphicon-thumbs-up"></i>45</p>
-		        			<p><i class="glyphicon glyphicon-thumbs-down"></i>10</p>
-		        		</div>
-		        	</li>
-		        	<li class="col-lg-12">
-		        		<img src="{$BASE_URL}images/avatar.png" alt="" class="userPhoto col-lg-3">
-		        		<div class="col-lg-4 totalPoints">
-		        			<h2>35</h2>
-		        			<p>points</p>
-		        		</div>
-
-		        		<div class="col-lg-5 thumbsUpDown">
-		        			<p><i class="glyphicon glyphicon-thumbs-up"></i>45</p>
-		        			<p><i class="glyphicon glyphicon-thumbs-down"></i>10</p>
-		        		</div>
-		        	</li>
-		        	<li class="col-lg-12">
-		        		<img src="{$BASE_URL}images/avatar.png" alt="" class="userPhoto col-lg-3">
-		        		<div class="col-lg-4 totalPoints">
-		        			<h2>35</h2>
-		        			<p>points</p>
-		        		</div>
-
-		        		<div class="col-lg-5 thumbsUpDown">
-		        			<p><i class="glyphicon glyphicon-thumbs-up"></i>45</p>
-		        			<p><i class="glyphicon glyphicon-thumbs-down"></i>10</p>
-		        		</div>
-		        	</li>
-		        	<li class="col-lg-12">
-		        		<img src="{$BASE_URL}images/avatar.png" alt="" class="userPhoto col-lg-3">
-		        		<div class="col-lg-4 totalPoints">
-		        			<h2>35</h2>
-		        			<p>points</p>
-		        		</div>
-
-		        		<div class="col-lg-5 thumbsUpDown">
-		        			<p><i class="glyphicon glyphicon-thumbs-up"></i>45</p>
-		        			<p><i class="glyphicon glyphicon-thumbs-down"></i>10</p>
-		        		</div>
-		        	</li>
+                    {/foreach}
 		        </ul>
 		      </div>
 		    </div>
@@ -158,4 +84,8 @@
 		</div>
 	</div>
 
+        {foreach $LAST_QUESTIONS as $question}
+            <h1>{$question.texto}</h1>
+            <img src="{$BASE_URL}images/assets/{$question.avatarurl}" alt=""/>
+        {/foreach}
 {/block}

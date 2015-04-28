@@ -23,6 +23,7 @@
 	height: 60px !important;
 	width: 60px !important;
 	padding: 0;
+    border-radius: 100%;
 }
 
 ul li{
@@ -129,18 +130,18 @@ ul li{
 	color: #455A64;
 }
 
-.tab-pane>.form-group,
-.tab-pane>.form-group>label,
-.tab-pane>.form-group>div,
-.tab-pane>.form-group>div>input{
+.tab-pane>form>.form-group,
+.tab-pane>form>.form-group>label,
+.tab-pane>form>.form-group>div,
+.tab-pane>form>.form-group>div>input{
 	padding: 0;
 }
 
-.tab-pane>.form-group{
+.tab-pane>form>.form-group{
 	border-bottom: 0.2em solid #455A64;
 }
 
-.tab-pane>.form-group>label{
+.tab-pane>form>.form-group>label{
 	margin: 0;
   	padding-top: 8px;
   	color: #455A64;
