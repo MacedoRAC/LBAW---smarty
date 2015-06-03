@@ -5,6 +5,6 @@
 
     getLastQuestions();
     getMostVotedQuestions();
-    getMostVotedUsers();
+    //getMostVotedUsers();
 	$smarty->display('index.tpl');
 ?>
