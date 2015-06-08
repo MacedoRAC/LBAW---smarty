@@ -74,12 +74,22 @@
 
                                 <!-- errors -->
                                 <div class="errors"></div>
-
-                                <div class = "form-group" style="border: none;">
-                                    <div class = "col-xs-12 btnCont">
-                                        <button type = "submit" class = "btn btn-default" id = "submitBtn">Sign In</button>
-                                    </div>
+                                <div class="col-xs-12">
+                                   <div class="col-xs-offset-3 col-xs-3">
+                                       <div class = "form-group" style="border: none;">
+                                            <div class = "col-xs-12 btnCont">
+                                                <button type = "submit" class = "btn btn-default" id = "submitBtn">Sign In</button>
+                                            </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-xs-3">
+                                       <div class="modal-footer">
+                                            <button type="button" id="btn_cancel_lined" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                        </div>
+                                   </div>
+                                    
                                 </div>
+                                
                         </div>
                         </form>
 
@@ -119,9 +129,19 @@
                                 </div>
 
                                 <div class = "form-group" style="border: none;">
-                                    <div class = "col-xs-12 btnCont">
-                                        <button type = "submit" class = "btn btn-default" id = "submitBtn">Register</button>
-                                    </div>
+                                   <div class="col-xs-12">
+                                       <div class="col-xs-offset-3 col-xs-3">
+                                           <div class = "col-xs-12 btnCont">
+                                                <button type = "submit" class = "btn btn-default" id = "submitBtn">Register</button>
+                                            </div>
+                                       </div>
+                                       <div class="col-xs-3">
+                                           <div class="modal-footer">
+                                                <button type="button" id="btn_cancel_lined" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                            </div>
+                                       </div>
+                                   </div>
+                                    
                                 </div>
                             </form>
                         </div>
@@ -138,9 +158,19 @@
                                 </div>
 
                                 <div class = "form-group" style="border: none;">
-                                    <div class = "col-xs-12 btnCont">
-                                        <button type = "submit" class = "btn btn-default" id = "submitBtn">Reset</button>
-                                    </div>
+                                   <div class="col-xs-12">
+                                      <div class="col-xs-offset-3 col-xs-3">
+                                          <div class = "col-xs-12 btnCont">
+                                                <button type = "submit" class = "btn btn-default" id = "submitBtn">Reset</button>
+                                            </div>
+                                      </div>
+                                      <div class="col-xs-3">
+                                          <div class="modal-footer">
+                                                <button type="button" id="btn_cancel_lined" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                            </div>
+                                      </div>
+                                       
+                                   </div>
                                 </div>
                             </form>
                         </div>
@@ -149,7 +179,6 @@
             </div>
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
             </div>
         </div>
     </div>
