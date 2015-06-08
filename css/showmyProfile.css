@@ -1,0 +1,26 @@
+.edit_nome{
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+.edit{
+    margin: 0;
+    padding: 0;
+}
+
+.edit_bio{
+    padding-top: 20px;    
+}
+
+.pic_form{
+    margin-left: 15px;
+}
+
+.edit:hover, .edit_nome:hover, edit_bio:hover{
+    text-decoration: none;
+}
+
+.name{
+    padding-right: 0;
+    padding-bottom: 0;
+}

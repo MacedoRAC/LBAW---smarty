@@ -133,8 +133,11 @@
     text-decoration: underline;
 }
 
+.blocked a{
+    color: #fff !important;
+}
+
 .blocked{
-    color: #fff;
-    text-decoration-color: #fff;
+    text-decoration-color: #fff !important;
     text-decoration: underline;
 }

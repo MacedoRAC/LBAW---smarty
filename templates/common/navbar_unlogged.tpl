@@ -148,7 +148,7 @@
                                 <div class="form-group col-lg-10 col-lg-offset-1">
                                     <label for="Date of Birth" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">Date of Birth</label>
                                     <div class=" col-lg-10 col-md-10 col-sm-12 col-xs-12">
-                                        <input class="form-control" placeholder="dd/mm/yyyy" name="date_birth" type="date" id="date_birth">
+                                        <input class="form-control" placeholder="yyyy-mm-dd" name="date_birth" type="date" id="date_birth">
                                     </div>
                                 </div>
                                 

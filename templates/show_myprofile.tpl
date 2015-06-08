@@ -1,6 +1,7 @@
 {extends file='common/header.tpl'}
 {block name="cssFiles" append}
 	<link href="{$BASE_URL}css/showProfile.css" rel="stylesheet">
+	<link href="{$BASE_URL}css/showmyProfile.css" rel="stylesheet">
 	<link href="{$BASE_URL}css/slick.css" rel="stylesheet">
 	<link href="{$BASE_URL}css/slick-theme.css" rel="stylesheet">
 {/block}
@@ -9,32 +10,73 @@
 <div id="profile_information">
 	<div class="container">
 		<div class="col-lg-3 avatar">
-			<img src="{$BASE_URL}images/ppic.jpg" alt="profile avatar">
+			<img class="col-xs-11" src="{$BASE_URL}images/ppic.jpg" alt="profile avatar">
+            <a class="col-xs-1 glyphicon glyphicon-pencil edit  edit_nome"></a>
+            <form action="" class="pic_form hide">
+                    <input type="url" placeholder="picture's url">
+                    <button>Edit</button>
+            </form>
+
 		</div>
 		<div class="col-lg-9 info">
 			<div class="col-lg-7">
 				<h2 class="col-xs-10 name">Pedro Lemos Faria</h2>
+				<a class="col-xs-2 glyphicon glyphicon-pencil edit  edit_nome"></a>
+                <form action="" class="hide">
+                    <input type="text" placeholder="name">
+                    <button>Edit</button>
+                </form>
 				
 				<div class="col-lg-12 contactCont">
                     <span class="col-lg-2 glyphicon glyphicon-user social col-lg-2"></span>
 					<p class="social_text col-lg-8">NICKNAME</p>
-					
+					<a class="col-lg-2 glyphicon glyphicon-pencil  edit"></a>
+					<form action="" class="hide">
+                        <input type="text" placeholder="nickname">
+                        <button>Edit</button>
+                    </form>
 				</div>
+                
 				<div class="col-lg-12 contactCont">
 					<span class="col-lg-2 social glyphicon glyphicon-envelope"></span>
 					<p class="social_text col-lg-8">example&#64gmail.com</p>
-					
+					<a class="col-lg-2 glyphicon glyphicon-pencil  edit"></a>
+					<form action="" class="hide">
+                        <input type="email" placeholder="email">
+                        <button>Edit</button>
+                    </form>
 				</div>
+				                
 				<div class="col-xs-12 contactCont">
 					<span class="col-xs-2 social glyphicon glyphicon-phone"></span>
 					<p class="social_text col-xs-8">+351 910000000</p>
-					
+					<a class="col-xs-2 glyphicon glyphicon-pencil  edit"></a>
+					<form action="" class="hide">
+                        <input type="tel" placeholder="phone number">
+                        <button>Edit</button>
+                    </form>
 				</div>
+                
 				<div class="col-xs-12 contactCont">
 					<span class="col-xs-2 social glyphicon glyphicon-calendar"></span>
 					<p class="social_text col-xs-8">1994-10-02</p>
-					
+					<a class="col-xs-2 glyphicon glyphicon-pencil  edit"></a>
+					<form action="" class="hide">
+                        <input type="date" placeholder="date of birth">
+                        <button>Edit</button>
+                    </form>
 				</div>
+                
+				<div class="col-xs-12 contactCont">
+					<span class="col-xs-2 social"></span>
+					<p class="col-xs-8">Password: *****</p>
+					<a class="col-xs-2 glyphicon glyphicon-pencil  edit"></a>
+					<form action="" class="hide">
+                        <input type="password" placeholder="password">
+                        <button>Edit</button>
+                    </form>
+				</div>
+                
 			</div>
 
 			<div class="col-lg-5 rating">
@@ -60,8 +102,13 @@
 		</div>
 
 		<div class="bio col-lg-12">
-			<h3>About Me</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nesciunt commodi dolorem incidunt, necessitatibus, porro accusantium officia illum minima repellat nam tenetur molestias numquam, pariatur possimus. Nemo repellat fuga optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint excepturi assumenda quibusdam repellendus, esse labore voluptates praesentium culpa fugit dolorum, sunt in atque modi aliquam accusantium consectetur voluptas qui molestias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia culpa quibusdam rem, sit tenetur, consequatur. Numquam dolorem quo itaque dignissimos, iure dolor, alias omnis, explicabo id unde aliquam. Explicabo, reprehenderit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ab fugit id dolor, mollitia reiciendis doloremque optio quod eius? Aut vel placeat ipsam accusantium consequuntur, quasi temporibus! Dignissimos, quasi, quibusdam.</p>
+			<h3 class="col-lg-2">About Me</h3>
+			<a class="col-lg-10 glyphicon glyphicon-pencil edit  edit_bio"></a>
+			<form class="col-lg-12 hide" action="">
+			    <input type="text" placeholder="Your Biography">
+			    <button>Edit</button>
+			</form>
+			<p class="col-lg-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nesciunt commodi dolorem incidunt, necessitatibus, porro accusantium officia illum minima repellat nam tenetur molestias numquam, pariatur possimus. Nemo repellat fuga optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint excepturi assumenda quibusdam repellendus, esse labore voluptates praesentium culpa fugit dolorum, sunt in atque modi aliquam accusantium consectetur voluptas qui molestias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia culpa quibusdam rem, sit tenetur, consequatur. Numquam dolorem quo itaque dignissimos, iure dolor, alias omnis, explicabo id unde aliquam. Explicabo, reprehenderit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ab fugit id dolor, mollitia reiciendis doloremque optio quod eius? Aut vel placeat ipsam accusantium consequuntur, quasi temporibus! Dignissimos, quasi, quibusdam.</p>
 		</div>
 	</div>
 

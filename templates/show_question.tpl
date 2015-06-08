@@ -35,7 +35,7 @@
 					
 					<ul class="icons col-lg-12 owner">
 					    <li><a data-toggle="modal" data-target="#AnswerModal">Answer</a></li>
-					    <li><a class="block_question">Block</a></li>
+					    <li class="block_question"><a>Block</a></li>
 					</ul>
 				</div>
 			</div>
