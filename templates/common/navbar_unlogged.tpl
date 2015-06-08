@@ -103,6 +103,14 @@
                                         <input class="form-control" placeholder="Name" name="text" type="text">
                                     </div>
                                 </div>
+                                
+                                <!-- UserName Form Input -->
+                                <div class="form-group col-lg-10 col-lg-offset-1">
+                                    <label for="Username" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">Username</label>
+                                    <div class=" col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                        <input class="form-control" placeholder="Username" name="username" type="text">
+                                    </div>
+                                </div>
 
                                 <!-- Email Form Input -->
                                 <div class="form-group col-lg-10 col-lg-offset-1">
@@ -127,7 +135,24 @@
                                         <input class="form-control" placeholder="Repeat Password" name="password2" type="text" id="password2">
                                     </div>
                                 </div>
-
+                                
+                                <!-- Phone Number Form Input -->
+                                <div class="form-group col-lg-10 col-lg-offset-1">
+                                    <label for="Phone Number" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">Phone Number</label>
+                                    <div class=" col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                        <input class="form-control" placeholder="Phone number" name="phone" type="tel" id="phone">
+                                    </div>
+                                </div>
+                                
+                                <!-- Date of Birth Form Input -->
+                                <div class="form-group col-lg-10 col-lg-offset-1">
+                                    <label for="Date of Birth" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">Date of Birth</label>
+                                    <div class=" col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                        <input class="form-control" placeholder="dd/mm/yyyy" name="date_birth" type="date" id="date_birth">
+                                    </div>
+                                </div>
+                                
+                                
                                 <div class = "form-group" style="border: none;">
                                    <div class="col-xs-12">
                                        <div class="col-xs-offset-3 col-xs-3">

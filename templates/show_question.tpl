@@ -3,6 +3,11 @@
 	<link href="{$BASE_URL}css/showQuestion.css" rel="stylesheet">
 {/block}
 
+<?php
+    $username = $_SESSION['username'];
+    $echo 'sdgersffe';
+?>
+
 {block name="content"}
 <div id="questAnsCont" class="container">
 	<div class="col-lg-8">
@@ -21,11 +26,16 @@
 						<li>Porto</li>
 						<li>FEUP</li>
 					</ul>
-					<ul class="icons col-lg-12">
+					<ul class="icons col-lg-12 not_owner">
 					    <li><a class="follow_js">Follow</a></li>
 						<li><a data-toggle="modal" data-target="#AnswerModal">Answer</a></li>
 						<li class="pos_vot">20&nbsp;<a><i class="glyphicon glyphicon-thumbs-up"></i></a></li>
 						<li class="neg_vot">3&nbsp;<a><i class="glyphicon glyphicon-thumbs-down"></i></a></li>
+					</ul>
+					
+					<ul class="icons col-lg-12 owner">
+					    <li><a data-toggle="modal" data-target="#AnswerModal">Answer</a></li>
+					    <li><a class="block_question">Block</a></li>
 					</ul>
 				</div>
 			</div>

@@ -207,3 +207,12 @@ $('.optn2').click(function (){
             $(".filters").stop().animate({"marginTop": ($(window).scrollTop()) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, "slow" );    
         }
     });
+
+// BLOCKING QUESTIONS
+    $('.block_question').click(function () {
+       if($(this).hasClass('blocked')){
+           $(this).removeClass('blocked');
+       }else{
+           $(this).addClass('blocked');
+       } 
+    });

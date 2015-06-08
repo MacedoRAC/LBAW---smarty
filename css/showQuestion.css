@@ -132,3 +132,9 @@
 .voted{
     text-decoration: underline;
 }
+
+.blocked{
+    color: #fff;
+    text-decoration-color: #fff;
+    text-decoration: underline;
+}
