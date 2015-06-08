@@ -1,0 +1,69 @@
+#searchPage{
+    padding: 0;
+    margin: -19px 0 0 0;
+    border: 1px 0 0 0;
+    border-color: #c2c2c2;
+    width: 100%;
+}
+
+.filters{
+    background-color: #455a64;
+    height: 100%;
+    overflow: visible;
+    padding-bottom: 20px;
+}
+
+.filters h3{
+    font-size: 20px;
+    color: #fff;
+    margin-left: -18px;
+    text-shadow: none;
+    text-emphasis: none;
+}
+
+.filters button{
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+}
+
+.selected{
+    text-decoration: line-through;
+    text-decoration-color: #fff;
+}
+
+.selected2{
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+.results{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.results h1{
+    color: #455a64;
+    text-decoration: underline;
+    text-decoration-color: #455a64;
+    font-size: 22px;
+}
+
+.results div div{
+    color: #455a64;
+    background-color: #c2c2c2;
+    margin: 2px 2px 2px 2px;
+}
+
+.results div div h2{
+    font-size: 18px;
+    text-align: left;
+}
+
+div div img{
+    padding: 5px 0 5px 0;    
+}

@@ -107,3 +107,28 @@
 #sideBarHighlights #topUsers .accordion-heading{
 	margin-top: 50px;
 }
+
+
+<!-- FORMS -->
+.modal_bg{
+    padding-top: 7%;
+    background-color: rgba(120, 120, 120, 0.8);
+}
+
+.modal_btn{
+    margin-top: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #455a64;
+    color: #ffffff;
+    border-color: #455a64;
+    border-width: 0;
+    align-content: center;
+    align-items: center;
+    margin-left: 215px;
+    padding-left: 0;
+}
+
+.voted{
+    text-decoration: underline;
+}

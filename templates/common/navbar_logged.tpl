@@ -35,7 +35,8 @@
 		  	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome, <span class="username">{$USERNAME}</span></a>
 		  	
 		  	<ul class="dropdown-menu" role="menu">
-		    	<li><a href="#">My Profile</a></li>
+        	    <li><a href="{$BASE_URL}pages/createQuestion.php" >Create a Question</a></li>
+		    	<li><a href="{$BASE_URL}pages/showProfile.php">My Profile</a></li>
                 <li>
                     <form id="logout_form" action="{$BASE_URL}actions/api/logout.php" method="POST">
                         <input type="hidden" value="{$BASE_URL}" id="base_url" />

@@ -22,14 +22,25 @@
 						<li>FEUP</li>
 					</ul>
 					<ul class="icons col-lg-12">
-						<li><a>Answer</a></li>
-						<li>20&nbsp;<a><i class="glyphicon glyphicon-thumbs-up"></i></a></li>
-						<li>3&nbsp;<a><i class="glyphicon glyphicon-thumbs-down"></i></a></li>
+					    <li><a class="follow_js">Follow</a></li>
+						<li><a data-toggle="modal" data-target="#AnswerModal">Answer</a></li>
+						<li class="pos_vot">20&nbsp;<a><i class="glyphicon glyphicon-thumbs-up"></i></a></li>
+						<li class="neg_vot">3&nbsp;<a><i class="glyphicon glyphicon-thumbs-down"></i></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
+        <div id="AnswerModal" class="modal fade modal_bg" role="dialog">
+            <div class="modal-dialog modal-xs">
+                <form class="" action="POST" id="answer_form">
+                    <div class="col-sm-12">
+                        <textarea name="answer" class="col-sm-12" cols="80" rows="16" form="answer_form" placeholder="Write here your answer ..."></textarea>
+                        <button type="submit" class="col-lg-3 col-sm-3 modal_btn"> Answer </button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
 		<!-- ANSWER -->
 		<div class="ansHolder col-lg-offset-2 col-lg-10">
@@ -46,14 +57,24 @@
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat.</p>
 					<ul class="icons col-lg-12">
-						<li><a>Comment</a></li>
-						<li>5&nbsp;<a><i class="glyphicon glyphicon-thumbs-up"></i></a></li>
-						<li>0&nbsp;<a><i class="glyphicon glyphicon-thumbs-down"></i></a></li>
+						<li><a data-toggle="modal" data-target="#CommentModal">Comment</a></li>
+						<li class="pos_vot">5&nbsp;<a><i class="glyphicon glyphicon-thumbs-up"></i></a></li>
+						<li class="neg_vot">0&nbsp;<a><i class="glyphicon glyphicon-thumbs-down"></i></a></li>
 					</ul>
 				</div>
 			</div>	
 		</div>
 
+        <div id="CommentModal" class="modal fade modal_bg" role="dialog">
+            <div class="modal-dialog modal-xs">
+                <form class="" action="POST" id="comment_form">
+                    <div class="col-sm-12">
+                        <textarea name="comment" class="col-sm-12" cols="80" rows="16" form="comment_form" placeholder="Write here your comment ..."></textarea>
+                        <button type="submit" class="col-lg-3 col-sm-3 modal_btn"> Comment </button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
 		<!-- Comment -->
 		<div class="comHolder col-lg-offset-3 col-lg-9">
@@ -68,8 +89,8 @@
 					<p class="comment col-lg-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua.</p>
 					<ul class="icons col-lg-12">
-						<li>5&nbsp;<a><i class="glyphicon glyphicon-thumbs-up"></i></a></li>
-						<li>0&nbsp;<a><i class="glyphicon glyphicon-thumbs-down"></i></a></li>
+						<li class="pos_vot">5&nbsp;<a><i class="glyphicon glyphicon-thumbs-up"></i></a></li>
+						<li class="neg_vot">0&nbsp;<a><i class="glyphicon glyphicon-thumbs-down"></i></a></li>
 					</ul>
 				</div>
 			</div>	

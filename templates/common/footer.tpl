@@ -47,26 +47,16 @@
 </body>
 <footer>
 
+	
+    {block name="jsFiles"}
 	<!-- JQuery -->
 	<script src="{$BASE_URL}javascript/jquery-2.1.3.min.js"></script>
 	<!-- Bootstrap JavaScript -->
 	<script src="{$BASE_URL}javascript/bootstrap.min.js"></script>
 	<!-- SCRIPT -->
-	<script src="{$BASE_URL}javascript/script.js"></script>
-
+	<script src="{$BASE_URL}javascript/script.js"></script> 
 	
 	<script src="{$BASE_URL}javascript/slick.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.carousel').slick({
-				autoplay: true,
-				autoplaySpeed: 2000,
-				swipe: true,
-				infinite: true,
-				adaptiveHeight: true,
-				dots: true
-			});
-		});
-	</script>
+    {/block}
 </footer>
 </html>

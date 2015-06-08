@@ -57,4 +57,153 @@ $(document).ready(function(){
             }
         });
     });
+    
+    $('.carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        swipe: true,
+        infinite: true,
+        adaptiveHeight: true,
+        dots: true
+    });
+
+    $('.add-field-tag').click(function(){
+        $('.multi-field-tag').append(' <li><input class="col-sm-3 form-control" type="text" placeholder="TAG" name="tags" class="tag"></li>');
+    }); 
+
+    $('.remove-field-tag').click(function(){
+        $('.multi-field-tag li:last-child').remove(); 
+    });
+    
+    
+    $('.add-field-choice').click(function(){
+        $('.multi-field-choice').append(' <li><input class="col-sm-12 form-control" type="text" placeholder="Choices" name="choices" id="choices"></li>');
+    }); 
+
+    $('.remove-field-choice').click(function(){
+        $('.multi-field-choice li:last-child').remove(); 
+    });
+    
+    
+    //KEEP BUTTONS SELECTED
+    $('.open_answer').click(function () {
+        $('.choices_panel').hide('fast');
+        $('.tags_panel').show('fast');
+        $('.multi_choice').removeClass('btn-active');
+        $('.open_answer').addClass('btn-active');
+    });
+    $('.multi_choice').click(function () {
+        $('.tags_panel').show('fast');
+        $('.choices_panel').removeClass('hidden');
+        $('.choices_panel').show('fast');
+        $('.open_answer').removeClass('btn-active');
+        $('.multi_choice').addClass('btn-active');
+    });
 });
+
+
+//SHOW QUESTION
+//FOLLOW AND UNFOLLOW
+
+$('a.follow_js').on('click', function() {
+  $(this).text($(this).text() == "Follow" ? "Unfollow" : "Follow");
+});
+
+//VOTES
+$('li.pos_vot').click(function () {
+    if($(this).hasClass('voted')){
+        $(this).alert('You have already voted');
+    }else{
+        $(this).addClass('voted');
+        $(this).next().removeClass('voted');
+    }
+});
+
+$('li.neg_vot').click(function () {
+    if($(this).hasClass('voted')){
+        $(this).alert('You have already voted');
+    }else{
+        $(this).addClass('voted');
+        $(this).prev().removeClass('voted');
+    }
+});
+
+
+$('.optn').click(function (){
+   if($(this).hasClass('selected')){
+        $(this).removeClass('selected');   
+   }else{
+       $(this).addClass('selected');
+   }
+    
+});
+
+$('.optn2').click(function (){
+   if($(this).hasClass('selected2')){
+        $(this).removeClass('selected2');   
+   }else{
+       $(this).addClass('selected2');
+       $(this).prev().removeClass('selected2');
+       $(this).next().removeClass('selected2');
+   }
+    
+});
+
+
+//SEARCH FILTERS
+    $('.search_questions').click(function () {
+        if($(this).hasClass('hideResults')){
+            $(this).removeClass('hideResults');
+            $('.search_questions_results').show('fast');
+        }else{
+            $(this).addClass('hideResults');
+            $('.search_questions_results').hide('fast');
+        }
+    });
+
+    $('.search_tags').click(function () {
+        if($(this).hasClass('hideResults')){
+            $(this).removeClass('hideResults');
+            $('.search_tags_results').show('fast');
+        }else{
+            $(this).addClass('hideResults');
+            $('.search_tags_results').hide('fast');
+        }
+    });
+
+    $('.search_users').click(function () {
+        if($(this).hasClass('hideResults')){
+            $(this).removeClass('hideResults');
+            $('.search_users_results').show('fast');
+        }else{
+            $(this).addClass('hideResults');
+            $('.search_users_results').hide('fast');
+        }
+    });
+
+    $('.search_answers').click(function () {
+        if($(this).hasClass('hideResults')){
+            $(this).removeClass('hideResults');
+            $('.search_answers_results').show('fast');
+        }else{
+            $(this).addClass('hideResults');
+            $('.search_answers_results').hide('fast');
+        }
+    });
+
+    $('.search_comments').click(function () {
+        if($(this).hasClass('hideResults')){
+            $(this).removeClass('hideResults');
+            $('.search_comments_results').show('fast');
+        }else{
+            $(this).addClass('hideResults');
+            $('.search_comments_results').hide('fast');
+        }
+    });
+
+// MOVING FILTERS WHILE SCROLLING
+    $(window).scroll(function(){
+        if($(window).scrollTop() + $('.filters').height() < $('#myFooter').position().top ){
+            $(".filters").stop().animate({"marginTop": ($(window).scrollTop()) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, "slow" );    
+        }
+    });
