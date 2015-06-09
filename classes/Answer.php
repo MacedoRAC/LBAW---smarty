@@ -2,6 +2,7 @@
 
 
 class Answer {
+    private $id;
     private $text;
     private $tu;
     private $td;
@@ -11,7 +12,8 @@ class Answer {
     private $comments;
 
 
-    public function __construct($text, $tu, $td, $creatorName, $date, $creatorID, $comments) {
+    public function __construct($id, $text, $tu, $td, $creatorName, $date, $creatorID, $comments) {
+        $this->id = $id;
         $this->text = $text;
         $this->tu = $tu;
         $this->td = $td;
@@ -27,6 +29,11 @@ class Answer {
     }
 
 
+    public function getId() {
+        return $this->id;
+    }
+
+
     public function getTu() {
         return $this->tu;
     }
@@ -37,8 +44,8 @@ class Answer {
     }
 
 
-    public function getCreator() {
-        return $this->creator;
+    public function getCreatorName() {
+        return $this->creatorName;
     }
 
 

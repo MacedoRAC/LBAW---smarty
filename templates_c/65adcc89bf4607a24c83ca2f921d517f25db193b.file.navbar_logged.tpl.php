@@ -1,4 +1,30 @@
-<nav class="navbar navbar-default" id="myNavbar">
+<?php /* Smarty version Smarty-3.1.15, created on 2015-06-09 09:15:48
+         compiled from "C:\wamp\www\frmk\templates\common\navbar_logged.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:2588755764efe4ebd43-33715996%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '65adcc89bf4607a24c83ca2f921d517f25db193b' => 
+    array (
+      0 => 'C:\\wamp\\www\\frmk\\templates\\common\\navbar_logged.tpl',
+      1 => 1433833663,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '2588755764efe4ebd43-33715996',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.15',
+  'unifunc' => 'content_55764efe603988_81656461',
+  'variables' => 
+  array (
+    'BASE_URL' => 0,
+    'USERNAME' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_55764efe603988_81656461')) {function content_55764efe603988_81656461($_smarty_tpl) {?><nav class="navbar navbar-default" id="myNavbar">
   <div class="container-fluid container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -8,15 +34,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{$BASE_URL}pages/homepage.php">
-        <img src="{$BASE_URL}images/logo-branco.svg" alt="UpFAQ_logo">
+      <a class="navbar-brand" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/homepage.php">
+        <img src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+images/logo-branco.svg" alt="UpFAQ_logo">
       </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right" id="menuOptions">
-        <li class=""><a href="{$BASE_URL}pages/homepage.php">Home</a></li>
+        <li class=""><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/homepage.php">Home</a></li>
         
         <li><a href="#">Tags</a></li>
         
@@ -32,14 +61,19 @@
         </li>
 
         <li class="dropdown">
-		  	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome, <span class="username">{$USERNAME}</span></a>
+		  	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome, <span class="username"><?php echo $_smarty_tpl->tpl_vars['USERNAME']->value;?>
+</span></a>
 		  	
 		  	<ul class="dropdown-menu" role="menu">
-        	    <li><a href="{$BASE_URL}pages/createQuestion.php" >Create a Question</a></li>
-		    	<li><a href="{$BASE_URL}pages/showProfile.php">My Profile</a></li>
+        	    <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/createQuestion.php" >Create a Question</a></li>
+		    	<li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/showProfile.php">My Profile</a></li>
                 <li>
-                    <form id="logout_form" action="{$BASE_URL}actions/api/logout.php" method="POST">
-                        <input type="hidden" value="{$BASE_URL}" id="base_url" />
+                    <form id="logout_form" action="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+actions/api/logout.php" method="POST">
+                        <input type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+" id="base_url" />
                         <button id="signout_button" type="submit">Sign Out</button>
                     </form>
                 </li>
@@ -167,3 +201,4 @@
 
 
 
+<?php }} ?>

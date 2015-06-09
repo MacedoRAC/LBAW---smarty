@@ -12,8 +12,8 @@
                 </div>
                 <div class="col-sm-12">
                     <button class="col-sm-12 optn search_questions"> Questions </button>
-                    <button class="col-sm-12 optn search_tags"> TAGs </button>
-                    <button class="col-sm-12 optn search_users"> Users </button>
+                    <!--<button class="col-sm-12 optn search_tags"> TAGs </button>
+                    <button class="col-sm-12 optn search_users"> Users </button>-->
                     <button class="col-sm-12 optn search_answers"> Answers </button>
                     <button class="col-sm-12 optn search_comments"> Comments </button>
                 </div>
@@ -30,34 +30,16 @@
             <div class="col-sm-10 results">
                <div class="col-sm-12 search_questions_results">
                    <h1 class="col-sm-12"> QUESTIONS </h1>
+                   {foreach $SEARCH_QUESTIONS as $question}
                    <div class="col-sm-3">
-                       <h2 class="col-sm-12"> Qual é a pergunta ? </h2>
+                       <a class="col-sm-12" href="{$BASE_DIR}showQuestion.php?id={$question.idpost}">{$question.texto}</a>
                        <span class="col-sm-offset-2 col-sm-4"> 20&nbsp; <a><i class="glyphicon glyphicon-thumbs-up"></i></a></span>
                        <span class="col-sm-4"> 3&nbsp; <a><i class="glyphicon glyphicon-thumbs-down"></i></a></span>
                    </div>
-                   <div class="col-sm-3">
-                       <h2 class="col-sm-12"> Qual é a pergunta ? </h2>
-                       <span class="col-sm-offset-2 col-sm-4"> 20&nbsp; <a><i class="glyphicon glyphicon-thumbs-up"></i></a></span>
-                       <span class="col-sm-4"> 3&nbsp; <a><i class="glyphicon glyphicon-thumbs-down"></i></a></span>
-                   </div>
-                   <div class="col-sm-3">
-                       <h2 class="col-sm-12"> Qual é a pergunta ? </h2>
-                       <span class="col-sm-offset-2 col-sm-4"> 20&nbsp; <a><i class="glyphicon glyphicon-thumbs-up"></i></a></span>
-                       <span class="col-sm-4"> 3&nbsp; <a><i class="glyphicon glyphicon-thumbs-down"></i></a></span>
-                   </div>
-                   <div class="col-sm-3">
-                       <h2 class="col-sm-12"> Qual é a pergunta ? </h2>
-                       <span class="col-sm-offset-2 col-sm-4"> 20&nbsp; <a><i class="glyphicon glyphicon-thumbs-up"></i></a></span>
-                       <span class="col-sm-4"> 3&nbsp; <a><i class="glyphicon glyphicon-thumbs-down"></i></a></span>
-                   </div>
-                   <div class="col-sm-3">
-                       <h2 class="col-sm-12"> Qual é a pergunta ? </h2>
-                       <span class="col-sm-offset-2 col-sm-4"> 20&nbsp; <a><i class="glyphicon glyphicon-thumbs-up"></i></a></span>
-                       <span class="col-sm-4"> 3&nbsp; <a><i class="glyphicon glyphicon-thumbs-down"></i></a></span>
-                   </div>
+                   {/foreach}
                </div>
                
-               <div class="col-sm-12 search_tags_results">
+               <!--<div class="col-sm-12 search_tags_results">
                    <h1 class="col-sm-12"> TAGS </h1>
                    <div class="col-sm-3">
                        <h2> ESTA TAG </h2>
@@ -74,9 +56,9 @@
                    <div class="col-sm-3">
                        <h2> ESTA TAG </h2>
                    </div>
-               </div>
+               </div>-->
                
-               <div class="col-sm-12 search_users_results">
+               <!--<div class="col-sm-12 search_users_results">
                    <h1 class="col-sm-12"> USERS </h1>
                    <div class="col-sm-3">
                        <img src="{$BASE_URL}images/avatar.png" class="col-sm-4" alt="user_img">
@@ -94,35 +76,24 @@
                        <img src="{$BASE_URL}images/avatar.png" class="col-sm-4" alt="user_img">
                        <h2> Utilizador com um NOme ENORME</h2>
                    </div>
-               </div>
+               </div>-->
                
                <div class="col-sm-12 search_answers_results">
                    <h1 class="col-sm-12"> ANSWERS </h1>
+                   {foreach $SEARCH_ANSWERS as $answer}
                    <div class="col-sm-3">
-                       <p>This is an answer for some asked question...</p>
+                       <p>{$answer.texto}</p>
                    </div>
-                   <div class="col-sm-3">
-                       <p>This is an answer for some asked question...</p>
-                   </div>
-                   <div class="col-sm-3">
-                       <p>This is an answer for some asked question...</p>
-                   </div>
+                   {/foreach}
                </div>
                
                <div class="col-sm-12 search_comments_results">
                    <h1 class="col-sm-12"> COMMENTS </h1>
+                   {foreach $SEARCH_COMMENTS as $comment}
                    <div class="col-sm-3">
-                       <p>This may be a comment related to some answer used to reply some asked question...</p>
+                       <p>{$comment.texto}</p>
                    </div>
-                   <div class="col-sm-3">
-                       <p>This may be a comment related to some answer used to reply some asked question...</p>
-                   </div>
-                   <div class="col-sm-3">
-                       <p>This may be a comment related to some answer used to reply some asked question...</p>
-                   </div>
-                   <div class="col-sm-3">
-                       <p>This may be a comment related to some answer used to reply some asked question...</p>
-                   </div>
+                   {/foreach}
                </div>
             </div>
 </div>

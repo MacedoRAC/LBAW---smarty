@@ -59,9 +59,10 @@
     margin: 2px 2px 2px 2px;
 }
 
-.results div div h2{
+.results div div a{
     font-size: 18px;
     text-align: left;
+    color: #000;
 }
 
 div div img{

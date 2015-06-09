@@ -152,6 +152,110 @@ $(document).ready(function(){
         }
     });
 
+
+    $("#questionTu").click(function(e) {
+        e.preventDefault();
+
+        var questionId = $("#questionID").val().trim();
+        var userId = $("#userID").val().trim();
+        if(!userId)
+            userId = "";
+        var action = $("#thumbsURL").attr('value').trim();
+        $.ajax({
+            url: action,
+            data: { type: "tu", questionID: questionId, userID: userId },
+            dataType: 'json',
+            type: 'POST',
+            success: function(data) {
+                if(data.success == false) {
+                    alert("Something went wrong while inserting your vote!");
+                } else 
+                    location.reload();
+            }, error: function(data) {  
+                alert("Something went wrong while inserting your vote!");
+            }
+        });
+    });
+
+
+    $("#questionTd").click(function(e) {
+        e.preventDefault();
+
+        var questionId = $("#questionID").val().trim();
+        var userId = $("#userID").val().trim();
+        if(!userId)
+            userId = "";
+        var action = $("#thumbsURL").attr('value').trim();
+        $.ajax({
+            url: action,
+            data: { type: "td", questionID: questionId, userID: userId },
+            dataType: 'json',
+            type: 'POST',
+            success: function(data) {
+                if(data.success == false) {
+                    alert("Something went wrong while inserting your vote!");
+                } else 
+                    location.reload();
+            }, error: function(data) {  
+                alert("Something went wrong while inserting your vote!");
+            }
+        });
+    });
+
+
+    $(".thumbsUpAnswer").click(function(e) {
+        e.preventDefault();
+
+        var answerID = $(this).parent().attr('value').trim();
+        var userId = $("#userID").val().trim();
+        if(!userId)
+            userId = "";
+
+
+        var action = $("#thumbsURL").attr('value').trim();
+        $.ajax({
+            url: action,
+            data: { type: "answerTu", userID: userId, answerID: answerID },
+            type: 'POST',
+            dataType: 'json',
+            success: function(data) {
+                if(data.success == false) {
+                    alert("Something went wrong while inserting your vote!");
+                } else 
+                    location.reload();
+            }, error: function(data) {
+                alert("Something went wrong while inserting your vote!");
+            }
+        });
+    });
+
+
+    $(".thumbsDownAnswer").click(function(e) {
+        e.preventDefault();
+
+        var answerID = $(this).parent().attr('value').trim();
+        var userId = $("#userID").val().trim();
+        if(!userId)
+            userId = "";
+
+
+        var action = $("#thumbsURL").attr('value').trim();
+        $.ajax({
+            url: action,
+            data: { type: "answerTd", userID: userId, answerID: answerID },
+            type: 'POST',
+            dataType: 'json',
+            success: function(data) {
+                if(data.success == false) {
+                    alert("Something went wrong while inserting your vote!");
+                } else 
+                    location.reload();
+            }, error: function(data) {
+                alert("Something went wrong while inserting your vote!");
+            }
+        });
+    });
+
     
     $('.carousel').slick({
         autoplay: true,

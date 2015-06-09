@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.15, created on 2015-06-09 03:07:00
+<?php /* Smarty version Smarty-3.1.15, created on 2015-06-09 08:54:18
          compiled from "C:\wamp\www\frmk\templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1828255763b3aa63e37-68431308%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,13 +7,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '835d3e5fdd7318bd010707597ba50ee660dadb3f' => 
     array (
       0 => 'C:\\wamp\\www\\frmk\\templates\\index.tpl',
-      1 => 1430246101,
+      1 => 1433825702,
       2 => 'file',
     ),
     '5c7f65b78f0df505b0369bb4a526b6ddd11f4138' => 
     array (
       0 => 'C:\\wamp\\www\\frmk\\templates\\common\\header.tpl',
-      1 => 1433811979,
+      1 => 1433817309,
       2 => 'file',
     ),
   ),
@@ -94,10 +94,10 @@ $_smarty_tpl->tpl_vars['question']->_loop = true;
 ?>
 			        	<li class="col-lg-12">
 			        		<img src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-images/assets/<?php echo $_smarty_tpl->tpl_vars['question']->value['avatarurl'];?>
-" alt="" class="userPhoto col-lg-3">
+images/assets/default.png" alt="" class="userPhoto col-lg-3">
 			        		<a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-pages/showQuestion.php"><p class="col-lg-9"><?php echo $_smarty_tpl->tpl_vars['question']->value['texto'];?>
+pages/showQuestion.php?id=<?php echo $_smarty_tpl->tpl_vars['question']->value['idpost'];?>
+"><p class="col-lg-9"><?php echo $_smarty_tpl->tpl_vars['question']->value['texto'];?>
 ?</p></a>
 			        	</li>
                         <?php } ?>
@@ -125,10 +125,10 @@ $_smarty_tpl->tpl_vars['question']->_loop = true;
 ?>
 			        	<li class="col-lg-12">
                             <img src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-images/assets/<?php echo $_smarty_tpl->tpl_vars['question']->value['avatarurl'];?>
-" alt="" class="userPhoto col-lg-3">
+images/assets/default.png" alt="" class="userPhoto col-lg-3">
                             <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-pages/showQuestion.php"><p class="col-lg-9"><?php echo $_smarty_tpl->tpl_vars['question']->value['texto'];?>
+pages/showQuestion.php?id=<?php echo $_smarty_tpl->tpl_vars['question']->value['idpost'];?>
+"><p class="col-lg-9"><?php echo $_smarty_tpl->tpl_vars['question']->value['texto'];?>
 ?</p></a>
 			        	</li>
                         <?php } ?>
@@ -157,8 +157,7 @@ $_smarty_tpl->tpl_vars['user']->_loop = true;
 ?>
 		        	<li class="col-lg-12">
 		        		<img src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-images/assets/<?php echo $_smarty_tpl->tpl_vars['user']->value['avatarurl'];?>
-" alt="" class="userPhoto col-lg-3">
+images/assets/default.png" alt="" class="userPhoto col-lg-3">
 		        		<div class="col-lg-4 totalPoints">
 		        			<h2><?php echo $_smarty_tpl->tpl_vars['user']->value['pontuacao'];?>
 </h2>
@@ -166,9 +165,9 @@ images/assets/<?php echo $_smarty_tpl->tpl_vars['user']->value['avatarurl'];?>
 		        		</div>
 
 		        		<div class="col-lg-5 thumbsUpDown">
-		        			<p><i class="glyphicon glyphicon-thumbs-up"></i><?php echo $_smarty_tpl->tpl_vars['user']->value['tu_result'];?>
+		        			<p><i class="glyphicon glyphicon-thumbs-up"></i><?php echo $_smarty_tpl->tpl_vars['user']->value['positivos'];?>
 </p>
-		        			<p><i class="glyphicon glyphicon-thumbs-down"></i><?php echo $_smarty_tpl->tpl_vars['user']->value['td_result'];?>
+		        			<p><i class="glyphicon glyphicon-thumbs-down"></i><?php echo $_smarty_tpl->tpl_vars['user']->value['negativos'];?>
 </p>
 		        		</div>
 		        	</li>

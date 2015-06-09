@@ -18,8 +18,8 @@
 			        <ul class="col-lg-12">
                         {foreach $LAST_QUESTIONS as $question}
 			        	<li class="col-lg-12">
-			        		<img src="{$BASE_URL}images/assets/{$question.avatarurl}" alt="" class="userPhoto col-lg-3">
-			        		<a href="{$BASE_URL}pages/showQuestion.php"><p class="col-lg-9">{$question.texto}?</p></a>
+			        		<img src="{$BASE_URL}images/assets/default.png" alt="" class="userPhoto col-lg-3">
+			        		<a href="{$BASE_URL}pages/showQuestion.php?id={$question.idpost}"><p class="col-lg-9">{$question.texto}?</p></a>
 			        	</li>
                         {/foreach}
 			        </ul>
@@ -41,8 +41,8 @@
 			        <ul class="col-lg-12">
                         {foreach $MOST_VOTED_QUESTIONS as $question}
 			        	<li class="col-lg-12">
-                            <img src="{$BASE_URL}images/assets/{$question.avatarurl}" alt="" class="userPhoto col-lg-3">
-                            <a href="{$BASE_URL}pages/showQuestion.php"><p class="col-lg-9">{$question.texto}?</p></a>
+                            <img src="{$BASE_URL}images/assets/default.png" alt="" class="userPhoto col-lg-3">
+                            <a href="{$BASE_URL}pages/showQuestion.php?id={$question.idpost}"><p class="col-lg-9">{$question.texto}?</p></a>
 			        	</li>
                         {/foreach}
 			        </ul>
@@ -65,15 +65,15 @@
 		        <ul class="col-lg-12">
                     {foreach $MOST_VOTED_USERS as $user}
 		        	<li class="col-lg-12">
-		        		<img src="{$BASE_URL}images/assets/{$user.avatarurl}" alt="" class="userPhoto col-lg-3">
+		        		<img src="{$BASE_URL}images/assets/default.png" alt="" class="userPhoto col-lg-3">
 		        		<div class="col-lg-4 totalPoints">
 		        			<h2>{$user.pontuacao}</h2>
 		        			<p>points</p>
 		        		</div>
 
 		        		<div class="col-lg-5 thumbsUpDown">
-		        			<p><i class="glyphicon glyphicon-thumbs-up"></i>{$user.tu_result}</p>
-		        			<p><i class="glyphicon glyphicon-thumbs-down"></i>{$user.td_result}</p>
+		        			<p><i class="glyphicon glyphicon-thumbs-up"></i>{$user.positivos}</p>
+		        			<p><i class="glyphicon glyphicon-thumbs-down"></i>{$user.negativos}</p>
 		        		</div>
 		        	</li>
                     {/foreach}
