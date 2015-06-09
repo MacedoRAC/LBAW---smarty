@@ -4,8 +4,8 @@
 
   error_reporting(E_ERROR | E_WARNING); // E_NOTICE by default
 
-  $BASE_DIR = 'localhost/frmk/'; //FIXME
-  $BASE_URL = 'localhost/frmk/'; //FIXME
+  $BASE_DIR = 'C:/wamp/www/frmk/'; //FIXME
+  $BASE_URL = '/frmk/'; //FIXME
 
   $conn = new PDO('pgsql:host=localhost;dbname=postgres', 'postgres', 'root'); //FIXME
   $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);

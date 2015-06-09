@@ -1,4 +1,29 @@
-<nav class="navbar navbar-default" id="myNavbar">
+<?php /* Smarty version Smarty-3.1.15, created on 2015-06-09 03:17:44
+         compiled from "C:\wamp\www\frmk\templates\common\navbar_unlogged.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:946455763b3b3c12e8-63600499%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'd48c9b2c3f9d91cc6088a32de847ef8cb55cb626' => 
+    array (
+      0 => 'C:\\wamp\\www\\frmk\\templates\\common\\navbar_unlogged.tpl',
+      1 => 1433812640,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '946455763b3b3c12e8-63600499',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.15',
+  'unifunc' => 'content_55763b3b41f0d2_01877700',
+  'variables' => 
+  array (
+    'BASE_URL' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_55763b3b41f0d2_01877700')) {function content_55763b3b41f0d2_01877700($_smarty_tpl) {?><nav class="navbar navbar-default" id="myNavbar">
     <div class="container-fluid container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -8,15 +33,18 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{$BASE_URL}pages/homepage.php">
-                <img src="{$BASE_URL}images/logo-branco.svg" alt="UpFAQ_logo">
+            <a class="navbar-brand" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/homepage.php">
+                <img src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+images/logo-branco.svg" alt="UpFAQ_logo">
             </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right" id="menuOptions">
-                <li class=""><a href="{$BASE_URL}pages/homepage.php">Home</a></li>
+                <li class=""><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+pages/homepage.php">Home</a></li>
 
                 <li><a href="#">Tags</a></li>
 
@@ -55,7 +83,8 @@
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="tab1">
                             <h4 class="col-lg-10 col-lg-offset-1">Don't loose more time...SIGN IN!</h4>
-                            <form id="signin_form" action="{$BASE_URL}actions/api/login.php" method="POST" enctype="application/x-www-form-urlencoded">
+                            <form id="signin_form" action="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+actions/api/login.php" method="POST" enctype="application/x-www-form-urlencoded">
                                 <!-- Email Form Input -->
                                 <div class="form-group col-lg-10 col-lg-offset-1">
                                     <label for="email" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">Email</label>
@@ -92,7 +121,8 @@
                         </div>
                         <div class="tab-pane fade" id="tab2">
                             <h4 class="col-lg-10 col-lg-offset-1">Do you need help? SIGN UP now!</h4>
-                            <form id="signupForm" action="{$BASE_URL}actions/api/signup.php" method="POST" enctype="application/x-www-form-urlencoded">
+                            <form id="signupForm" action="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+actions/api/signup.php" method="POST" enctype="application/x-www-form-urlencoded">
                                 <!-- Name Form Input -->
                                 <div class="form-group col-lg-10 col-lg-offset-1">
                                     <label for="name" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">Name</label>
@@ -213,3 +243,4 @@
         </div>
     </div>
 </div>
+<?php }} ?>
