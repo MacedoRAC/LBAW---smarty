@@ -111,6 +111,14 @@
                                         <input class="form-control" placeholder="Username" type="text" id="signupUsername">
                                     </div>
                                 </div>
+                                
+                                <!-- UserName Form Input -->
+                                <div class="form-group col-lg-10 col-lg-offset-1">
+                                    <label for="Username" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">Username</label>
+                                    <div class=" col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                        <input class="form-control" placeholder="Username" name="username" type="text">
+                                    </div>
+                                </div>
 
                                 <!-- Email Form Input -->
                                 <div class="form-group col-lg-10 col-lg-offset-1">
@@ -136,11 +144,15 @@
                                     </div>
                                 </div>
 
-                                <!-- Phone Number Form Input -->
-                                <div class="form-group col-lg-10 col-lg-offset-1">
+
+                                    <!-- Phone Number Form Input -->
+                                    <div class="form-group col-lg-10 col-lg-offset-1">
                                     <label for="Phone Number" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">Phone Number</label>
                                     <div class=" col-lg-10 col-md-10 col-sm-12 col-xs-12">
                                         <input class="form-control" placeholder="Phone number" type="tel" id="signupPhoneNumber">
+                                    </div>
+                                </div>
+                                        <input class="form-control" placeholder="Phone number" name="phone" type="tel" id="phone">
                                     </div>
                                 </div>
 
@@ -151,7 +163,9 @@
                                         <input class="form-control" placeholder="dd/mm/yyyy" type="date" id="signupDateBirth">
                                     </div>
                                 </div>
-
+                                        <input class="form-control" placeholder="yyyy-mm-dd" name="date_birth" type="date" id="date_birth">
+                                    </div>
+                                </div>
 
                                 <div class = "form-group" style="border: none;">
                                     <div class="col-xs-12">

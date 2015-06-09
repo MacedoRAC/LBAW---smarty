@@ -302,3 +302,78 @@ $('.optn2').click(function (){
             $(".filters").stop().animate({"marginTop": ($(window).scrollTop()) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, "slow" );    
         }
     });
+
+// BLOCKING QUESTIONS
+    $('.block_question').click(function () {
+       if($(this).hasClass('blocked')){
+           $(this).removeClass('blocked');
+       }else{
+           $(this).addClass('blocked');
+       } 
+    });
+
+// SHOW EDIT FORMS
+ $('.edit').click(function () {
+    if($(this).next().hasClass('hide')){
+        $(this).next().removeClass('hide');
+    }else{
+        $(this).next().addClass('hide');
+    }
+ });
+
+
+
+// PAINEL DE ADMINISTRAÇAO
+//efeitos da navbar
+$('.optn_admin').click(function (){
+   if($(this).hasClass('selected')){
+        $('.admin_block').removeClass('hide');
+        $(this).removeClass('selected');
+   }else{
+       $(this).addClass('selected');
+       $(this).prev().prev().prev().removeClass('selected');
+       $(this).prev().prev().removeClass('selected');
+       $(this).prev().removeClass('selected');
+       $(this).next().removeClass('selected');
+       $(this).next().next().removeClass('selected');
+       $(this).next().next().next().removeClass('selected');
+   }
+    
+});
+
+$('.nav_users').click(function (){
+    if($(this).hasClass('selected')){
+        $('.admin_users_block').removeClass('hide');
+        $('.admin_question_block').addClass('hide');
+        $('.admin_answer_block').addClass('hide');
+        $('.admin_comment_block').addClass('hide');
+    }
+});
+
+$('.nav_questions').click(function (){
+    if($(this).hasClass('selected')){
+        $('.admin_users_block').addClass('hide');
+        $('.admin_question_block').removeClass('hide');
+        $('.admin_answer_block').addClass('hide');
+        $('.admin_comment_block').addClass('hide');
+    }
+});
+
+$('.nav_answers').click(function (){
+    if($(this).hasClass('selected')){
+        $('.admin_users_block').addClass('hide');
+        $('.admin_question_block').addClass('hide');
+        $('.admin_answer_block').removeClass('hide');
+        $('.admin_comment_block').addClass('hide');
+    }
+});
+
+$('.nav_comments').click(function (){
+    if($(this).hasClass('selected')){
+        $('.admin_users_block').addClass('hide');
+        $('.admin_question_block').addClass('hide');
+        $('.admin_answer_block').addClass('hide');
+        $('.admin_comment_block').removeClass('hide');
+    }
+});
+

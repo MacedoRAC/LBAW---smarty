@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="752a31bd-abb6-4de4-8ab7-e89d87e22a98" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/create_Question.tpl" afterPath="$PROJECT_DIR$/templates/create_Question.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/homepage.php" afterPath="$PROJECT_DIR$/pages/homepage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/init.php" afterPath="$PROJECT_DIR$/init.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/init.php" afterPath="$PROJECT_DIR$/config/init.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/actions/api/login.php" afterPath="$PROJECT_DIR$/actions/api/login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/common/navbar_admin.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/showMyProfile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/show_myprofile.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/showmyProfile.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/admin.php" afterPath="$PROJECT_DIR$/pages/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/administrator/admin.tpl" afterPath="$PROJECT_DIR$/templates/administrator/admin.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/navbar.css" afterPath="$PROJECT_DIR$/css/navbar.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/common/navbar_unlogged.tpl" afterPath="$PROJECT_DIR$/templates/common/navbar_unlogged.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/questions.php" afterPath="$PROJECT_DIR$/database/questions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/script.js" afterPath="$PROJECT_DIR$/javascript/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/users.php" afterPath="$PROJECT_DIR$/database/users.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/showQuestion.css" afterPath="$PROJECT_DIR$/css/showQuestion.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/show_perfil.tpl" afterPath="$PROJECT_DIR$/templates/show_perfil.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/show_question.tpl" afterPath="$PROJECT_DIR$/templates/show_question.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="frmk.iws" />
@@ -49,8 +52,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascript/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1989" max-vertical-offset="5253">
-              <caret line="141" column="81" selection-start-line="141" selection-start-column="81" selection-end-line="141" selection-end-column="81" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3281" max-vertical-offset="6545">
+              <caret line="217" column="34" selection-start-line="217" selection-start-column="34" selection-end-line="217" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -59,9 +62,11 @@
       <file leaf-file-name="show_question.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/show_question.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="3791">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="3961">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding>
+                <marker date="1433810461146" expanded="true" signature="1366:1385" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,7 +119,6 @@
         <option value="$PROJECT_DIR$/pages/homepage.php" />
         <option value="$PROJECT_DIR$/actions/api/signup.php" />
         <option value="$PROJECT_DIR$/database/users.php" />
-        <option value="$PROJECT_DIR$/templates/common/navbar_unlogged.tpl" />
         <option value="$PROJECT_DIR$/init.php" />
         <option value="$PROJECT_DIR$/actions/api/login.php" />
         <option value="$PROJECT_DIR$/config/init.php" />
@@ -126,6 +130,7 @@
         <option value="$PROJECT_DIR$/classes/Answer.php" />
         <option value="$PROJECT_DIR$/database/answers.php" />
         <option value="$PROJECT_DIR$/templates/create_Question.tpl" />
+        <option value="$PROJECT_DIR$/templates/common/navbar_unlogged.tpl" />
       </list>
     </option>
   </component>
@@ -191,6 +196,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frmk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LBAW---smarty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -284,7 +307,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -330,26 +353,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/questions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1003">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding>
-            <marker date="1433792785124" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1433792785124" expanded="true" signature="-1:-1" placeholder="SELECT MAX(i..." />
-            <marker date="1433792785124" expanded="true" signature="-1:-1" placeholder="select MAX(i..post..." />
-            <marker date="1433792785124" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1433792785124" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..pergunta..." />
-            <marker date="1433792785124" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..pergunta..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/show_question.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="3791">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
+          <folding>
+            <marker date="1433810461146" expanded="true" signature="1366:1385" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -591,13 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/common/navbar_unlogged.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.487037" vertical-offset="0" max-vertical-offset="3655">
-          <caret line="79" column="48" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/createQuestion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.087628864" vertical-offset="0" max-vertical-offset="582">
@@ -651,9 +654,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/show_question.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="3791">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="3961">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <marker date="1433810461146" expanded="true" signature="1366:1385" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -705,8 +710,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1989" max-vertical-offset="5253">
-          <caret line="141" column="81" selection-start-line="141" selection-start-column="81" selection-end-line="141" selection-end-column="81" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3281" max-vertical-offset="6545">
+          <caret line="217" column="34" selection-start-line="217" selection-start-column="34" selection-end-line="217" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -734,6 +739,30 @@
             <marker date="1433800614807" expanded="true" signature="2408:2507" placeholder="SELECT idpos..view_thumbsup..." />
             <marker date="1433800614807" expanded="true" signature="2737:2838" placeholder="SELECT idpos..view_thumbsdown..." />
             <marker date="1433800614807" expanded="true" signature="3069:3118" placeholder="SELECT * FRO..autenticado..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/show_myprofile.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2924">
+          <caret line="0" column="26" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/common/navbar_unlogged.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.95185184" vertical-offset="2775" max-vertical-offset="3315">
+          <caret line="168" column="12" selection-start-line="168" selection-start-column="12" selection-end-line="168" selection-end-column="12" />
+          <folding>
+            <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
