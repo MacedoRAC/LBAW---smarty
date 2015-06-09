@@ -1,13 +1,13 @@
 <?php
-  session_set_cookie_params(3600, '/~ei12097'); //FIXME
+  session_set_cookie_params(3600, 'localhost'); //FIXME
   session_start();
 
   error_reporting(E_ERROR | E_WARNING); // E_NOTICE by default
 
-  $BASE_DIR = '/usr/users2/mieic2012/ei12097/public_html/frmk/'; //FIXME
-  $BASE_URL = '/~ei12097/frmk/'; //FIXME
+  $BASE_DIR = 'localhost/frmk/'; //FIXME
+  $BASE_URL = 'localhost/frmk/'; //FIXME
 
-  $conn = new PDO('pgsql:host=vdbm;dbname=lbaw1444', 'lbaw1444', 'php@Lodo44'); //FIXME
+  $conn = new PDO('pgsql:host=localhost;dbname=lbaw', 'postgres', 'root'); //FIXME
   $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
