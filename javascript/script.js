@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 	$( ".accordion-inner ul li:even" ).css('background', '#cfd8dc');
 
@@ -14,14 +13,13 @@ $(document).ready(function(){
 	});
 
 
-    $("#submitBtn").click(function (e) {
+    $("#loginSubmitButton").click(function (e) {
         e.preventDefault();
 
         var email = $("#email").val().trim();
-        var password= $("#password").val().trim();
+        var password = $("#password").val().trim();
 
         var url = $("#signin_form").attr('action');
-        //alert(url);
         $.ajax({
             url: url,
             type: 'POST',
@@ -29,8 +27,9 @@ $(document).ready(function(){
             dataType: 'json',
             success: function(data) {
                 if(data.error == false) {
-                    //alert(data.username);
                     location.reload();
+                } else {
+                    alert("Something went wrong while signing you in!");
                 }
             }, error: function(data) {
                 alert('Something went wrong while logging you in!');
@@ -57,6 +56,102 @@ $(document).ready(function(){
             }
         });
     });
+
+
+    // SIGNUP ACTION
+    $("#signupButton").click(function(e) {
+        e.preventDefault();
+        var action = $("#signupForm").attr('action');
+
+        var username = $("#signupUsername").val().trim();
+        var name = $("#signupName").val().trim();
+        var email = $("#signupEmail").val().trim();
+        var password = $("#signupPassword").val().trim();
+        var passwordConfirmation = $("#signupPassword2").val().trim();
+        var phoneNumber = $("#signupPhoneNumber").val().trim();
+        var birthDate = $("#signupDateBirth").val().trim();
+
+
+        if(!name || !email || !password || !passwordConfirmation || !username || !phoneNumber || !birthDate)
+            alert("Error! Please fill all the required fields!");
+        else {
+            if(password != passwordConfirmation)
+                alert("Error! Passwords must match!");
+            else {
+                // Perform the AJAX request
+                $.ajax({
+                    url: action,
+                    type: 'POST',
+                    data: { username: username, phoneNumber: phoneNumber, birthDate: birthDate, name: name, email: email, password: password, passwordConfirmation: passwordConfirmation },
+                    dataType: 'json',
+                    success: function(data) {
+                        if(data.error == false)
+                            alert("User registered with success!");
+                        else
+                            alert(data.message);
+                    }, error: function(data) {
+                        alert("Something went wrong while signing you up!");
+                    }
+                });
+            }
+        }
+    });
+
+
+    // CREATE QUESTION ACTION
+    $("#createQuestionButton").click(function(e) {
+        e.preventDefault();
+
+        var userID = $("#user_id").val().trim();
+        var action = $("#createQuestionForm").attr('action');
+        var isOpenAnswer = $("#openAnswerButton").hasClass('btn-active');
+        var finalArrayData = [];
+        var tags = [];
+        var choices = [];
+
+
+        if(isOpenAnswer) {
+            $('input[name="tags[]"]').each(function() {
+                var tag = $(this).val().trim();
+                if(tag)
+                    tags.push(tag);
+            });
+        } else {
+            $('input[name="choices[]"]').each(function() {
+                var choice = $(this).val().trim();
+                if(choice)
+                    choices.push(choice);
+            });
+        }
+
+
+        if(isOpenAnswer) {
+            if(tags.length > 0) {
+                var questionText = $("#createQuestionText").val().trim();
+                if(!questionText) {
+                    alert("You must enter a question!");
+                } else {
+                    // Send the request
+                    $.ajax({
+                        url: action,
+                        type: 'POST',
+                        data: { text: questionText, tags: tags, userID: userID },
+                        dataType: 'json',
+                        success: function(data) {
+                            if(data.error == true) {
+                                alert("Your question was created with success!");
+                            }
+                        }, error: function(data) {
+                            alert("Something went wrong while creating your question!");
+                        }
+                    });
+                }
+            } else {
+                alert("You must provide at least one tag!");
+            }
+        }
+    });
+
     
     $('.carousel').slick({
         autoplay: true,
@@ -68,7 +163,7 @@ $(document).ready(function(){
     });
 
     $('.add-field-tag').click(function(){
-        $('.multi-field-tag').append(' <li><input class="col-sm-3 form-control" type="text" placeholder="TAG" name="tags" class="tag"></li>');
+        $('.multi-field-tag').append(' <li><input class="col-sm-3 form-control" type="text" placeholder="TAG" name="tags[]" class="tag" id="tags"></li>');
     }); 
 
     $('.remove-field-tag').click(function(){
@@ -77,7 +172,7 @@ $(document).ready(function(){
     
     
     $('.add-field-choice').click(function(){
-        $('.multi-field-choice').append(' <li><input class="col-sm-12 form-control" type="text" placeholder="Choices" name="choices" id="choices"></li>');
+        $('.multi-field-choice').append(' <li><input class="col-sm-12 form-control" type="text" placeholder="Choices" name="choices[]" id="choices"></li>');
     }); 
 
     $('.remove-field-choice').click(function(){

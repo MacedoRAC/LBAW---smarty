@@ -1,5 +1,36 @@
 <?php
-  include_once('../config/init.php');
+    include_once($BASE_DIR . 'config/init.php');
+
+    function insertQuestion($text, $id, $tags) {
+        global $conn;
+        $data = array();
+        try {
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $conn->setAttribute(PDO::ATTR_EMULATE_PREPARES, TRUE);
+            $conn->beginTransaction();
+            $stmt = $conn->prepare("INSERT INTO post (texto, idautenticado) VALUES (?, ?)");
+            $stmt->bindValue(1, $text);
+            $stmt->bindValue(2, (int)$id);
+            $stmt->execute();
+
+            $stmt = $conn->query("SELECT MAX(idpost) AS last FROM post");
+            $lastID = $stmt->fetch()['last'];
+            foreach($tags as $tag) {
+                $stmt = $conn->prepare("INSERT INTO tag (nome, idpost) VALUES (?, ?)");
+                $stmt->bindValue(1, $tag);
+                $stmt->bindValue(2, (int)$lastID);
+                $stmt->execute();
+            }
+            $data['success'] = true;
+            $conn->commit();
+        } catch(Exception $e) {
+            echo $e->getMessage();
+            $data['success'] = false;
+            $conn->rollBack();
+        }
+        return $data;
+    }
+
 
 
     function getLastQuestions(){

@@ -15,6 +15,7 @@
             $json_data['username'] = $resp['username'];
             $_SESSION['email'] = $email;
             $_SESSION['username'] = $resp['username'];
+            $_SESSION['user_id'] = $resp['idautenticado'];
         } else {
             $json_data['error'] = true;
             $json_data['message'] = "Invalid Login!";
