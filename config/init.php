@@ -7,7 +7,7 @@
   $BASE_DIR = 'localhost/frmk/'; //FIXME
   $BASE_URL = 'localhost/frmk/'; //FIXME
 
-  $conn = new PDO('pgsql:host=localhost;dbname=lbaw', 'postgres', 'root'); //FIXME
+  $conn = new PDO('pgsql:host=localhost;dbname=postgres', 'postgres', 'root'); //FIXME
   $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -25,6 +25,8 @@
   $smarty->assign('SUCCESS_MESSAGES', $_SESSION['success_messages']);
   $smarty->assign('FORM_VALUES', $_SESSION['form_values']);
   $smarty->assign('USERNAME', $_SESSION['username']);
+  $smarty->assign('USER_ID', $_SESSION['user_id']);
+
   
   unset($_SESSION['success_messages']);
   unset($_SESSION['error_messages']);  
